@@ -1,20 +1,20 @@
 import React from 'react'
+import scrollTo from 'gatsby-plugin-smoothscroll'
+import styled from 'styled-components'
 
 import Title from './components/Title'
 import SocialLink from './components/SocialLink'
-import MenuItem from './components/MenuItem'
-import {StyledLeftAbsoluteNavbar, StyledSocialLinkBox, StyledMenu} from './styled'
+import { StyledLeftAbsoluteNavbar, StyledSocialLinkBox, StyledMenu, StyledMenuItem } from './styled'
 
 const Navbar = () => (
   <StyledLeftAbsoluteNavbar>
     <Title subtitle='WEB DEVELOPER'>RAYSULTAN KARIMOV</Title>
-
     <StyledMenu>
-      <MenuItem link='#home'>HOME</MenuItem>
-      <MenuItem link='#skills'>SKILLS</MenuItem>
-      <MenuItem link='#experience'>EXPERIENCE</MenuItem>
-      <MenuItem link='#work'>WORK</MenuItem>
-      <MenuItem link='#contact'>CONTACT</MenuItem>
+      <StyledMenuItem onClick={() => scrollTo('#home')}>HOME</StyledMenuItem>
+      <StyledMenuItem onClick={() => scrollTo('#skills')}>SKILLS</StyledMenuItem>
+      <StyledMenuItem onClick={() => scrollTo('#experience')}>EXPERIENCE</StyledMenuItem>
+      <StyledMenuItem onClick={() => scrollTo('#work')}>WORK</StyledMenuItem>
+      <StyledMenuItem onClick={() => scrollTo('#contact')}>CONTACT</StyledMenuItem>
     </StyledMenu>
     <StyledSocialLinkBox>
       <SocialLink>GITHUB</SocialLink>

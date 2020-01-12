@@ -96,7 +96,7 @@ export const StyledWorkBlock = styled.div`
   flex-direction: column;
   justify-content: space-between;
   flex: 5;
-  padding: 0 100px 100px 100px;
+  padding: 100px;
 `
 
 export const StyledProjectsBox = styled.div`

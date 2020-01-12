@@ -38,8 +38,7 @@ const MainContent = () => (
   <StyledMainContent>
     <StyledFlex>
       <StyledLefted />
-      <StyledBlockHome>
-        <a  name='#home'/>
+      <StyledBlockHome id='home'>
         <StyledMainText>
           HELLO!
           <br />
@@ -55,8 +54,7 @@ const MainContent = () => (
 
     <StyledFlex>
       <StyledLefted />
-      <StyledBlock>
-        <a  name='#skills'/>
+      <StyledBlock id='skills'>
         <StyledHeader>SKILLS</StyledHeader>
         <StyledListBox>
           <List title='LANGUAGES'>
@@ -91,8 +89,7 @@ const MainContent = () => (
     </StyledFlex>
     <StyledFlex>
       <StyledLefted />
-      <StyledBlock>
-        <a  name='#experience'/>
+      <StyledBlock id='experience'>
         <StyledHeader>EXPERIENCE</StyledHeader>
         <StyledExperienceBox>
           <ExperienceLine subtitle='BACKEND DEVELOPER'>
@@ -109,8 +106,7 @@ const MainContent = () => (
     </StyledFlex>
     <StyledFlex>
       <StyledLefted />
-      <StyledWorkBlock>
-        <a name='#work'/>
+      <StyledBlock id='work'>
         <StyledHeader>WORK</StyledHeader>
         <StyledProjectsBox>
           <StyledProjectsHead>FEATURED PROJECTS</StyledProjectsHead>
@@ -123,7 +119,7 @@ const MainContent = () => (
             image = 'https://themes.getbootstrap.com/wp-content/uploads/2018/06/dashkit-1.3.0-alt@2x-1200x900.png'
           />
         </StyledProjectsBox>
-      </StyledWorkBlock>
+      </StyledBlock>
     </StyledFlex>
     <StyledFlex>
       <StyledLefted />
@@ -145,16 +141,15 @@ const MainContent = () => (
     </StyledFlex>
     <StyledFlex>
       <StyledLefted />
-      <StyledContactBlock>
-        <a  name='#contact'/>
+      <StyledBlock id='contact'>
         <StyledHeader>CONTACT</StyledHeader>
         <StyledContactBox>
           <StyledContactTitle>
-            MAIL ME ON <StyledMailToLink>KI.XBOZZ@GMAIL.COM</StyledMailToLink>
+            MAIL ME ON <StyledMailToLink href='mailto: ki.xbozz@gmail.com'>KI.XBOZZ@GMAIL.COM</StyledMailToLink>
           </StyledContactTitle>
         </StyledContactBox>
         <StyledCopyRight>© 2020 DESIGNED & CODED BY R.KARIMOV<br />BUILT WITH GATSBY</StyledCopyRight>
-      </StyledContactBlock>
+      </StyledBlock>
     </StyledFlex>
   </StyledMainContent>
 )
