@@ -10,11 +10,11 @@ const Navbar = () => (
     <Title subtitle='WEB DEVELOPER'>RAYSULTAN KARIMOV</Title>
 
     <StyledMenu>
-      <MenuItem link=''>HOME</MenuItem>
-      <MenuItem link=''>SKILLS</MenuItem>
-      <MenuItem link=''>EXPERIENCE</MenuItem>
-      <MenuItem link=''>WORK</MenuItem>
-      <MenuItem link=''>CONTACT</MenuItem>
+      <MenuItem link='#home'>HOME</MenuItem>
+      <MenuItem link='#skills'>SKILLS</MenuItem>
+      <MenuItem link='#experience'>EXPERIENCE</MenuItem>
+      <MenuItem link='#work'>WORK</MenuItem>
+      <MenuItem link='#contact'>CONTACT</MenuItem>
     </StyledMenu>
     <StyledSocialLinkBox>
       <SocialLink>GITHUB</SocialLink>

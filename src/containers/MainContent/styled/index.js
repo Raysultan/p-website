@@ -42,7 +42,7 @@ export const StyledBlock = styled.div`
   padding: 100px;
 `
 
-export const StyledHeader = styled.div`
+export const StyledHeader = styled.a`
   font-size: 52px;
   color: #FFFFFF;
 `
@@ -96,7 +96,7 @@ export const StyledWorkBlock = styled.div`
   flex-direction: column;
   justify-content: space-between;
   flex: 5;
-  padding: 100px;
+  padding: 0 100px 100px 100px;
 `
 
 export const StyledProjectsBox = styled.div`
@@ -112,7 +112,7 @@ export const StyledProjectsHead = styled.div`
 
 export const StyledProjectCard = styled.div`
   display: flex;
-  height: 35vh;
+  height: 30vh;
   width: 60vw;
   border: 1px solid #FFFFFF;
 `
@@ -126,7 +126,7 @@ export const StyledProjectCardBody = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: ${({toggle}) => toggle ? `flex-start` : `flex-end`};
   padding: 35px;
 `
 
@@ -163,5 +163,85 @@ export const StyledLinkBox = styled.div`
 export const StyledLink = styled.a`
   color: #FFFFFF;
   font-size: 14px;
-  margin-left: 16px;
+  margin: ${({toggle}) => toggle ? `0 16px 0 0` : `0 0 0 16px`};
+`
+
+export const StyledOtherWorkBlock = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 5;
+  padding: 0 100px 100px 100px;
+`
+
+export const StyledTableBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+`
+
+export const StyledTableTitle = styled.h3`
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+`
+
+export const StyledTable = styled.table`
+  border-collapse: collapse;
+`
+
+export const StyledTableRow = styled.tr`
+  border-bottom: 1px solid #FFFFFF;
+`
+
+export const StyledTableHeader = styled.th`
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 10px;
+`
+
+export const StyledTableCell = styled.td`
+  font-size: 18px;
+  color: #7D7474;
+  padding: 8px;
+`
+
+export const StyledTableLink = styled.a`
+  font-size: 16px;
+  color: #FFFFFF;
+`
+
+export const StyledContactBlock = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 5;
+  padding: 100px;
+`
+
+export const StyledContactBox = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+export const StyledContactTitle = styled.h3`
+  font-size: 50px;
+  color: #7D7474;
+`
+
+export const StyledMailToLink = styled.a`
+  font-size: 54px;
+  color: #FFFFFF;
+`
+
+export const StyledCopyRight = styled.span`
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 1.6;
 `
