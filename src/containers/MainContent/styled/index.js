@@ -184,6 +184,9 @@ export const StyledImage = styled.img`
   max-width: 100%;
   max-height: 100%;
   display: block;
+  @media (max-width: 830px) {
+    display: none;
+  }
 `
 
 export const StyledProjectCardBody = styled.div`
