@@ -25,7 +25,7 @@ export default ({toggle, title, description, used_tech, direct_link, github_link
 
           { github_link && (
             <StyledLink href={github_link} aria-label='Github Link'>
-              GITHUB LINK
+              GITHUB
             </StyledLink>
           )
           }
@@ -59,7 +59,7 @@ export default ({toggle, title, description, used_tech, direct_link, github_link
               toggle={true}
               href={github_link} aria-label='Github Link'
             >
-              GITHUB LINK
+              GITHUB
             </StyledLink>
           )
           }

@@ -1,6 +1,5 @@
 import React from 'react'
 import scrollTo from 'gatsby-plugin-smoothscroll'
-import styled from 'styled-components'
 
 import Title from './components/Title'
 import SocialLink from './components/SocialLink'

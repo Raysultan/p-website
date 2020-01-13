@@ -14,6 +14,9 @@ export const StyledFlex = styled.div`
 export const StyledLefted = styled.div`
   width: 260px;
   height: 100%;
+  @media (max-width: 1110px) {
+    width: 200px;
+  }
 `
 
 export const StyledBlockHome = styled.div`
@@ -31,6 +34,10 @@ export const StyledMainText = styled.div`
   word-wrap: break-word;
   font-size: 24px;
   line-height: 1.2;
+  @media (max-width: 1080px) {
+    width: 50vw;
+    height: auto;
+  }
 `
 
 export const StyledBlock = styled.div`
@@ -45,6 +52,7 @@ export const StyledBlock = styled.div`
 export const StyledHeader = styled.a`
   font-size: 52px;
   color: #FFFFFF;
+  margin-bottom: 50px;
 `
 
 export const StyledListItem = styled.li`
@@ -52,20 +60,30 @@ export const StyledListItem = styled.li`
   font-size: 20px;
   color: #7D7474;
   line-height: 1.6;
+  @media (max-width: 1300px) {
+    font-size: 16px;
+  }
 `
 
 export const StyledListTitle = styled.h3`
   font-size: 30px;
   line-height: 1.8;
   color: #FFFFFF;
+  @media (max-width: 1300px) {
+    font-size: 20px;
+  }
 `
 
 export const StyledList = styled.ul`
+  margin: 0 20px 20px 0;
 `
 
 export const StyledListBox = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1300px) {
+    flex-wrap: wrap;
+  }
 `
 
 export const StyledExperienceLineBox = styled.div`
@@ -77,17 +95,26 @@ export const StyledExperienceTitle = styled.h2`
   font-size: 34px;
   color: #7D7474;
   margin-bottom: 10px;
+  @media (max-width: 1300px) {
+    font-size: 26px;
+  }
+  @media (max-width: 1060px) {
+    font-size: 20px;
+  }
 `
 
 export const StyledExperienceSubtitle = styled.span`
   font-size: 18px;
   color: #7D7474;
+  @media (max-width: 1060px) {
+    font-size: 14px;
+  }
 `
 
 export const StyledExperienceBox = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 160px;
+  align-items: space-around;
 `
 
 export const StyledWorkBlock = styled.div`
@@ -112,7 +139,7 @@ export const StyledProjectsHead = styled.div`
 
 export const StyledProjectCard = styled.div`
   display: flex;
-  height: 30vh;
+  height: 36vh;
   width: 60vw;
   border: 1px solid #FFFFFF;
 `
@@ -120,6 +147,7 @@ export const StyledProjectCard = styled.div`
 export const StyledImage = styled.img`
   max-width: 100%;
   max-height: 100%;
+  display: block;
 `
 
 export const StyledProjectCardBody = styled.div`
@@ -127,22 +155,33 @@ export const StyledProjectCardBody = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: ${({toggle}) => toggle ? `flex-start` : `flex-end`};
-  padding: 35px;
+  padding: 30px;
+  @media (max-width: 1300px) {
+    padding: 20px;
+  }
 `
 
 export const StyledProjectCardTitle = styled.h3`
   font-size: 36px;
   color: #7D7474;
+  margin-bottom: 15px;
+  @media (max-width: 1110px) {
+    font-size: 24px;
+  }
 `
 
 export const StyledProjectCardDescBox = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 `
 
 export const StyledProjectCardDesc = styled.div`
   font-size: 18px;
   color: #7D7474;
+  @media (max-width: 1110px) {
+    font-size: 14px;
+  }
 `
 
 export const StyledProjectCardUsedTechBox = styled.div`
@@ -152,8 +191,9 @@ export const StyledProjectCardUsedTechBox = styled.div`
 
 export const StyledProjectCardUsedTech = styled.span`
   font-size: 12px;
-  color: #7D7474;
+  color: #7D7600;
   margin-right: 10px;
+  font-weight: 600;
 `
 
 export const StyledLinkBox = styled.div`
@@ -179,12 +219,16 @@ export const StyledTableBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: space-around;
+  margin-top: 100px;
 `
 
 export const StyledTableTitle = styled.h3`
   font-size: 36px;
   color: #FFFFFF;
   margin-bottom: 30px;
+  @media (max-width: 1110px) {
+    font-size: 30px;
+  }
 `
 
 export const StyledTable = styled.table`
@@ -200,17 +244,26 @@ export const StyledTableHeader = styled.th`
   color: #FFFFFF;
   text-align: left;
   padding: 10px;
+  @media (max-width: 1110px) {
+    font-size: 20px;
+  }
 `
 
 export const StyledTableCell = styled.td`
   font-size: 18px;
   color: #7D7474;
   padding: 8px;
+  @media (max-width: 1110px) {
+    font-size: 16px;
+  }
 `
 
 export const StyledTableLink = styled.a`
   font-size: 16px;
   color: #FFFFFF;
+  @media (max-width: 1110px) {
+    font-size: 15px;
+  }
 `
 
 export const StyledContactBlock = styled.div`
@@ -233,15 +286,24 @@ export const StyledContactBox = styled.div`
 export const StyledContactTitle = styled.h3`
   font-size: 50px;
   color: #7D7474;
+  @media (max-width: 1110px) {
+    font-size: 30px;
+  }
 `
 
 export const StyledMailToLink = styled.a`
   font-size: 54px;
   color: #FFFFFF;
+  @media (max-width: 1110px) {
+    font-size: 32px;
+  }
 `
 
 export const StyledCopyRight = styled.span`
   font-size: 14px;
   color: #FFFFFF;
   line-height: 1.6;
+  @media (max-width: 1110px) {
+    font-size: 12px;
+  }
 `

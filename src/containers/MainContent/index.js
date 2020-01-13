@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { StyledLefted, StyledMainContent, StyledFlex, StyledBlockHome, StyledMainText, StyledBlock, StyledHeader, StyledListBox, StyledListItem, StyledExperienceBox, StyledWorkBlock, StyledProjectsBox, StyledProjectsHead, StyledOtherWorkBlock, StyledContactBlock, StyledContactBox, StyledContactTitle, StyledMailToLink, StyledCopyRight } from './styled'
+import { StyledLefted, StyledMainContent, StyledFlex, StyledBlockHome, StyledMainText, StyledBlock, StyledHeader, StyledListBox, StyledListItem, StyledExperienceBox, StyledProjectsBox, StyledProjectsHead, StyledOtherWorkBlock, StyledContactBox, StyledContactTitle, StyledMailToLink, StyledCopyRight } from './styled'
 import List from './components/List'
 import ExperienceLine from './components/ExperienceLine'
 import ProjectCard from './components/ProjectCard'

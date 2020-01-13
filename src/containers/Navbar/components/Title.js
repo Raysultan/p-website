@@ -1,8 +1,8 @@
 import React from 'react'
 
-import {StyledTitle, StyledSubtitle} from '../styled'
+import { StyledTitle, StyledSubtitle } from '../styled'
 
-export default ({subtitle, children}) => (
+export default ({ subtitle, children }) => (
   <div>
     <StyledTitle>
       {children}
