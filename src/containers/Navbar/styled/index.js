@@ -17,6 +17,12 @@ export const StyledLeftAbsoluteNavbar = styled.div`
   @media (max-width: 1000px) {
     width: 160px;
   }
+  @media (max-width: 830px) {
+    display: ${({display}) => display} !important;
+    position: relative;
+    width: 100%;
+    padding: 40px;
+  }
 `
 
 export const StyledSocialLink = styled.a`
@@ -32,6 +38,10 @@ export const StyledSocialLink = styled.a`
   }
   @media (max-width: 1000px) {
     font-size: 12px;
+  }
+  @media (max-width: 830px) {
+    font-size: 16px;
+    margin-right: 14px;
   }
 `
 
@@ -50,17 +60,24 @@ export const StyledTitle = styled.h1`
   @media (max-width: 1000px) {
     font-size: 18px;
   }
+  @media (max-width: 830px) {
+    font-size: 22px;
+  }
 `
 
 export const StyledSubtitle = styled.h3`
   font-size: 20px;
   color: #7D7474;
+  margin-top: 4px;
   font-weight: 400;
   @media (max-width: 1110px) {
     font-size: 16px;
   }
   @media (max-width: 1000px) {
     font-size: 12px;
+  }
+  @media (max-width: 830px) {
+    font-size: 16px;
   }
 `
 
@@ -77,6 +94,9 @@ export const StyledMenuItem = styled.a`
   }
   @media (max-width: 1000px) {
     font-size: 16px;
+  }
+  @media (max-width: 830px) {
+    font-size: 23px;
   }
 `
 

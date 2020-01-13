@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import {slide as Menu} from 'react-burger-menu'
 
 import './index.css'
 import Navbar from '../containers/Navbar'
@@ -12,7 +13,10 @@ const StyledBody = styled.div`
 
 const IndexPage = () => (
   <StyledBody>
-    <Navbar />
+    <Menu right>
+      <Navbar />
+    </Menu>
+    <Navbar display='none'/>
     <MainContent />
   </StyledBody>
 )

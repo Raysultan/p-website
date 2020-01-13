@@ -5,8 +5,8 @@ import Title from './components/Title'
 import SocialLink from './components/SocialLink'
 import { StyledLeftAbsoluteNavbar, StyledSocialLinkBox, StyledMenu, StyledMenuItem } from './styled'
 
-const Navbar = () => (
-  <StyledLeftAbsoluteNavbar>
+const Navbar = ({display}) => (
+  <StyledLeftAbsoluteNavbar display={display}>
     <Title subtitle='WEB DEVELOPER'>RAYSULTAN KARIMOV</Title>
     <StyledMenu>
       <StyledMenuItem onClick={() => scrollTo('#home')}>HOME</StyledMenuItem>

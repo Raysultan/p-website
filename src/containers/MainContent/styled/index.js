@@ -20,6 +20,9 @@ export const StyledLefted = styled.div`
   @media (max-width: 1000px) {
     width: 160px;
   }
+  @media (max-width: 830px) {
+    display: none !important;
+  }
 `
 
 export const StyledBlockHome = styled.div`
@@ -63,6 +66,9 @@ export const StyledHeader = styled.a`
   font-size: 52px;
   color: #FFFFFF;
   margin-bottom: 50px;
+  @media (max-width: 830px) {
+    font-size: 42px;
+  }
 `
 
 export const StyledListItem = styled.li`
@@ -125,6 +131,9 @@ export const StyledExperienceBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: space-around;
+  @media (max-width: 1000px) {
+    padding-bottom: 100px;
+  }
 `
 
 export const StyledWorkBlock = styled.div`
@@ -159,6 +168,14 @@ export const StyledProjectCard = styled.div`
   @media (max-width: 920px) {
     height: 25vw;
   }
+  @media (max-width: 830px) {
+    width: 80vw;
+    height: 30vw;
+  }
+  @media (max-width: 720px) {
+    height: 34vw;
+    width: 100%;
+  }
 `
 
 export const StyledImage = styled.img`
@@ -187,6 +204,9 @@ export const StyledProjectCardTitle = styled.h3`
   }
   @media (max-width: 920px) {
     font-size: 18px;
+  }
+  @media (max-width: 720px) {
+    font-size: 20px;
   }
 `
 
@@ -286,6 +306,9 @@ export const StyledTableCell = styled.td`
   @media (max-width: 1110px) {
     font-size: 16px;
   }
+  @media (max-width: 720px) {
+    font-size: 13px;
+  }
 `
 
 export const StyledTableLink = styled.a`
@@ -293,6 +316,9 @@ export const StyledTableLink = styled.a`
   color: #FFFFFF;
   @media (max-width: 1110px) {
     font-size: 15px;
+  }
+  @media (max-width: 720px) {
+    font-size: 13px;
   }
 `
 
