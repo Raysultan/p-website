@@ -184,7 +184,7 @@ export const StyledImage = styled.img`
   max-width: 100%;
   max-height: 100%;
   display: block;
-  @media (max-width: 830px) {
+  @media (max-width: 764px) {
     display: none;
   }
 `
@@ -197,6 +197,9 @@ export const StyledProjectCardBody = styled.div`
   padding: 30px;
   @media (max-width: 1300px) {
     padding: 20px;
+  }
+  @media (max-width: 764px) {
+    width: 100%;
   }
 `
 
