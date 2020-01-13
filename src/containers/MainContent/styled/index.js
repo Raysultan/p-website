@@ -17,6 +17,9 @@ export const StyledLefted = styled.div`
   @media (max-width: 1110px) {
     width: 200px;
   }
+  @media (max-width: 1000px) {
+    width: 160px;
+  }
 `
 
 export const StyledBlockHome = styled.div`
@@ -33,10 +36,14 @@ export const StyledMainText = styled.div`
   color: #FFFFFF;
   word-wrap: break-word;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1.4;
   @media (max-width: 1080px) {
     width: 50vw;
     height: auto;
+  }
+  @media (max-width: 1000px) {
+    width: 60vw;
+    font-size: 20px;
   }
 `
 
@@ -47,6 +54,9 @@ export const StyledBlock = styled.div`
   justify-content: space-between;
   flex: 5;
   padding: 100px;
+  @media (max-width: 1000px) {
+    padding: 64px;
+  }
 `
 
 export const StyledHeader = styled.a`
@@ -135,13 +145,20 @@ export const StyledProjectsHead = styled.div`
   font-size: 36px;
   color: #7D7474;
   margin-bottom: 78px;
+  @media (max-width: 920px) {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
 `
 
 export const StyledProjectCard = styled.div`
   display: flex;
-  height: 36vh;
+  height: 20vw;
   width: 60vw;
   border: 1px solid #FFFFFF;
+  @media (max-width: 920px) {
+    height: 25vw;
+  }
 `
 
 export const StyledImage = styled.img`
@@ -168,6 +185,9 @@ export const StyledProjectCardTitle = styled.h3`
   @media (max-width: 1110px) {
     font-size: 24px;
   }
+  @media (max-width: 920px) {
+    font-size: 18px;
+  }
 `
 
 export const StyledProjectCardDescBox = styled.div`
@@ -187,12 +207,13 @@ export const StyledProjectCardDesc = styled.div`
 export const StyledProjectCardUsedTechBox = styled.div`
   display: flex;
   margin-top: 10px;
+  flex-wrap: wrap;
 `
 
 export const StyledProjectCardUsedTech = styled.span`
   font-size: 12px;
   color: #7D7600;
-  margin-right: 10px;
+  margin: 4px 10px 0 0;
   font-weight: 600;
 `
 
@@ -204,6 +225,9 @@ export const StyledLink = styled.a`
   color: #FFFFFF;
   font-size: 14px;
   margin: ${({toggle}) => toggle ? `0 16px 0 0` : `0 0 0 16px`};
+  @media (max-width: 920px) {
+    font-size: 12px;
+  }
 `
 
 export const StyledOtherWorkBlock = styled.div`
@@ -213,6 +237,9 @@ export const StyledOtherWorkBlock = styled.div`
   justify-content: space-between;
   flex: 5;
   padding: 0 100px 100px 100px;
+  @media (max-width: 1000px) {
+    padding: 0 64px 64px 64px;
+  }
 `
 
 export const StyledTableBox = styled.div`
@@ -228,6 +255,9 @@ export const StyledTableTitle = styled.h3`
   margin-bottom: 30px;
   @media (max-width: 1110px) {
     font-size: 30px;
+  }
+  @media (max-width: 920px) {
+    font-size: 24px;
   }
 `
 
