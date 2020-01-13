@@ -8,7 +8,9 @@ export default ({title, projects}) => {
       <StyledTableCell>{el.name}</StyledTableCell>
       <StyledTableCell>{el.used_tech}</StyledTableCell>
       <StyledTableCell>
-        <StyledTableLink href={el.github_link}>GITHUB</StyledTableLink>
+        <StyledTableLink href={el.github_link} target='_blank'>
+          GITHUB
+        </StyledTableLink>
       </StyledTableCell>
     </StyledTableRow>
   ))

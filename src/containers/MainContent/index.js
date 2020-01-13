@@ -10,27 +10,27 @@ const other_projects = [
   {
     name: 'RECIPE BOOK API',
     used_tech: 'DJANGO DRF POSTGRESQL DOCKER',
-    github_link: 'www.google.com',
+    github_link: 'https://github.com/Raysultan/recipe-app-api',
   },
   {
     name: 'GRAPH ALGOS',
     used_tech: 'VUE FIREBASE',
-    github_link: 'www.google.com',
+    github_link: 'https://github.com/Raysultan/graphalgos',
   },
   {
     name: 'PRODUCTHUNT',
     used_tech: 'DJANGO POSTGRESQL',
-    github_link: 'www.google.com',
+    github_link: 'https://github.com/Raysultan/product-hunt',
   },
   {
     name: 'LEARN RSA',
     used_tech: 'HTML SASS JQUERY',
-    github_link: 'www.google.com',
+    github_link: 'https://github.com/Raysultan/LearnRSA',
   },
   {
     name: 'BLOG ENGINE',
     used_tech: 'DJANGO POSTGRESQL',
-    github_link: 'www.google.com',
+    github_link: 'https://github.com/Raysultan/blog-engine',
   },
 ]
 
@@ -112,11 +112,10 @@ const MainContent = () => (
           <StyledProjectsHead>FEATURED PROJECTS</StyledProjectsHead>
           <ProjectCard
             title='EL-JOURNAL'
-            description = 'A NICER LOOK AT YOUR GITHUB AW  W  EWQEQW KJUUYUHQWJE NSADIJHKEWQ IUHSJDSAKJ IUQWEH KH'
+            description = 'A SYSTEM FOR STUDENTS PERFORMANCE TRACKING IN SECONDARY SCHOOLS.'
             used_tech = {['REACT', 'REDUX', 'DJANGO', 'DRF', 'POSTGRESQL']}
-            direct_link = 'www.google.com'
-            github_link = 'www.yandex.ru'
-            image = 'https://themes.getbootstrap.com/wp-content/uploads/2018/06/dashkit-1.3.0-alt@2x-1200x900.png'
+            github_link = 'https://github.com/Raysultan/el-journal'
+            image = 'https://raw.githubusercontent.com/Raysultan/el-journal/develop/images/timetable.png'
           />
         </StyledProjectsBox>
       </StyledBlock>
@@ -127,11 +126,11 @@ const MainContent = () => (
         <ProjectCard
           toggle={true}
           title='ROSCOSMOS API'
-          description = 'A NICER LOOK AT YOUR GITHUB AW  W QWEWQEQW KJUUYUHQWJE NSADIJHKEWQ IUHSJDSAKJ IUQWEH KH'
+          description = 'OPEN SOURCE API BASED ON ROSCOSMOS DATA FOR ROCKETS, LAUNCHES, LAUNCH PADS, SPACETUGS, ETC.'
           used_tech = {['DJANGO', 'DRF', 'CELERY', 'REDIS', 'BS4', 'POSTGRESQL', 'DOCKER']}
-          direct_link = 'www.google.com'
-          github_link = 'www.yandex.ru'
-          image = 'https://themes.getbootstrap.com/wp-content/uploads/2018/06/dashkit-1.3.0-alt@2x-1200x900.png'
+          direct_link = 'http://roscosmos.xyz/'
+          github_link = 'https://github.com/Raysultan/roscosmos-api'
+          image = 'https://www.roscosmos.ru/cache/resized/news/index/splash/roscosmos_bluebackground.png'
         />
         <ProjectTable
           title='OTHER NOTEWORTHY PROJECTS'

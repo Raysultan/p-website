@@ -30,9 +30,6 @@ export const StyledSocialLink = styled.a`
   font-size: 16px;
   color: #FFFFFF;
   text-decoration: none;
-  &:hover {
-    cursor: pointer;
-  }
   @media (max-width: 1110px) {
     font-size: 14px;
   }
@@ -67,7 +64,7 @@ export const StyledTitle = styled.h1`
 
 export const StyledSubtitle = styled.h3`
   font-size: 20px;
-  color: #7D7474;
+  color: #8B8484;
   margin-top: 4px;
   font-weight: 400;
   @media (max-width: 1110px) {

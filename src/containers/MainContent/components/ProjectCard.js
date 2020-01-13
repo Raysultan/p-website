@@ -4,6 +4,7 @@ import {StyledProjectCard, StyledImage, StyledProjectCardBody, StyledProjectCard
 
 export default ({toggle, title, description, used_tech, direct_link, github_link, image}) => {
   const used_tech_mapped = used_tech.map((el) => <StyledProjectCardUsedTech>{el}</StyledProjectCardUsedTech>)
+  const used_tech_mapped_toggled = used_tech.map((el) => <StyledProjectCardUsedTech toggle>{el}</StyledProjectCardUsedTech>)
   if(!toggle) return (
     <StyledProjectCard>
       <StyledImage src={image} />
@@ -17,14 +18,23 @@ export default ({toggle, title, description, used_tech, direct_link, github_link
         </StyledProjectCardDescBox>
         <StyledLinkBox>
           { direct_link && (
-            <StyledLink href={direct_link} aria-label='Direct Link'>
+            <StyledLink
+              href={direct_link}
+              target='_blank'
+              aria-label='Direct Link'
+              target='_blank'
+            >
               DIRECT LINK
             </StyledLink>
           )
           }
 
           { github_link && (
-            <StyledLink href={github_link} aria-label='Github Link'>
+            <StyledLink
+              href={github_link}
+              target='_blank'
+              aria-label='Github Link'
+            >
               GITHUB
             </StyledLink>
           )
@@ -35,19 +45,21 @@ export default ({toggle, title, description, used_tech, direct_link, github_link
   )
   else return (
     <StyledProjectCard>
-      <StyledProjectCardBody toggle={true}>
+      <StyledProjectCardBody toggle>
         <StyledProjectCardTitle>{title}</StyledProjectCardTitle>
-        <StyledProjectCardDescBox>
-          <StyledProjectCardDesc>{description}</StyledProjectCardDesc>
-          <StyledProjectCardUsedTechBox>
-            {used_tech_mapped}
+        <StyledProjectCardDescBox toggle>
+          <StyledProjectCardDesc toggle>{description}</StyledProjectCardDesc>
+          <StyledProjectCardUsedTechBox toggle>
+            {used_tech_mapped_toggled}
           </StyledProjectCardUsedTechBox>
         </StyledProjectCardDescBox>
         <StyledLinkBox>
           { direct_link && (
             <StyledLink
-              toggle={true}
-              href={direct_link} aria-label='Direct Link'
+              toggle
+              href={direct_link}
+              aria-label='Direct Link'
+              target='_blank'
             >
               DIRECT LINK
             </StyledLink>
@@ -56,8 +68,10 @@ export default ({toggle, title, description, used_tech, direct_link, github_link
 
           { github_link && (
             <StyledLink
-              toggle={true}
-              href={github_link} aria-label='Github Link'
+              toggle
+              href={github_link}
+              aria-label='Github Link'
+              target='_blank'
             >
               GITHUB
             </StyledLink>

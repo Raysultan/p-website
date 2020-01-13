@@ -58,7 +58,7 @@ export const StyledBlock = styled.div`
   flex: 5;
   padding: 100px;
   @media (max-width: 1000px) {
-    padding: 64px;
+    padding: 50px;
   }
 `
 
@@ -73,8 +73,8 @@ export const StyledHeader = styled.a`
 
 export const StyledListItem = styled.li`
   list-style-type: none;
-  font-size: 20px;
-  color: #7D7474;
+  font-size: 18px;
+  color: #8B8484;
   line-height: 1.6;
   @media (max-width: 1300px) {
     font-size: 16px;
@@ -82,7 +82,7 @@ export const StyledListItem = styled.li`
 `
 
 export const StyledListTitle = styled.h3`
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1.8;
   color: #FFFFFF;
   @media (max-width: 1300px) {
@@ -91,7 +91,7 @@ export const StyledListTitle = styled.h3`
 `
 
 export const StyledList = styled.ul`
-  margin: 0 20px 20px 0;
+  margin: 0 25px 20px 0;
 `
 
 export const StyledListBox = styled.div`
@@ -109,7 +109,7 @@ export const StyledExperienceLineBox = styled.div`
 
 export const StyledExperienceTitle = styled.h2`
   font-size: 34px;
-  color: #7D7474;
+  color: #8B8484;
   margin-bottom: 10px;
   @media (max-width: 1300px) {
     font-size: 26px;
@@ -121,7 +121,7 @@ export const StyledExperienceTitle = styled.h2`
 
 export const StyledExperienceSubtitle = styled.span`
   font-size: 18px;
-  color: #7D7474;
+  color: #8B8484;
   @media (max-width: 1060px) {
     font-size: 14px;
   }
@@ -152,8 +152,8 @@ export const StyledProjectsBox = styled.div`
 
 export const StyledProjectsHead = styled.div`
   font-size: 36px;
-  color: #7D7474;
-  margin-bottom: 78px;
+  color: #8B8484;
+  margin-bottom: 48px;
   @media (max-width: 920px) {
     font-size: 26px;
     margin-bottom: 40px;
@@ -165,16 +165,18 @@ export const StyledProjectCard = styled.div`
   height: 20vw;
   width: 60vw;
   border: 1px solid #FFFFFF;
+  @media (max-width: 980px) {
+    width: 64vw;
+  }
   @media (max-width: 920px) {
-    height: 25vw;
+    height: 20vw;
+    width: 100%;
   }
   @media (max-width: 830px) {
-    width: 80vw;
-    height: 30vw;
+    height: 24vw;
   }
   @media (max-width: 720px) {
-    height: 34vw;
-    width: 100%;
+    height: 28vw;
   }
 `
 
@@ -197,7 +199,7 @@ export const StyledProjectCardBody = styled.div`
 
 export const StyledProjectCardTitle = styled.h3`
   font-size: 36px;
-  color: #7D7474;
+  color: #8B8484;
   margin-bottom: 15px;
   @media (max-width: 1110px) {
     font-size: 24px;
@@ -218,7 +220,8 @@ export const StyledProjectCardDescBox = styled.div`
 
 export const StyledProjectCardDesc = styled.div`
   font-size: 18px;
-  color: #7D7474;
+  color: #8B8484;
+  text-align: ${({toggle}) => !toggle ? `right` : `left`};
   @media (max-width: 1110px) {
     font-size: 14px;
   }
@@ -228,13 +231,14 @@ export const StyledProjectCardUsedTechBox = styled.div`
   display: flex;
   margin-top: 10px;
   flex-wrap: wrap;
+  justify-content: ${({toggle}) => toggle ? `flex-start` : `flex-end`};
 `
 
 export const StyledProjectCardUsedTech = styled.span`
   font-size: 12px;
-  color: #7D7600;
-  margin: 4px 10px 0 0;
-  font-weight: 600;
+  color: #FFFFFF;
+  margin: ${({toggle}) => toggle ? `0 10px 4px 0` : `4px 0 0 10px`};
+  font-weight: 400;
 `
 
 export const StyledLinkBox = styled.div`
@@ -258,7 +262,7 @@ export const StyledOtherWorkBlock = styled.div`
   flex: 5;
   padding: 0 100px 100px 100px;
   @media (max-width: 1000px) {
-    padding: 0 64px 64px 64px;
+    padding: 0 50px 50px 50px;
   }
 `
 
@@ -301,7 +305,7 @@ export const StyledTableHeader = styled.th`
 
 export const StyledTableCell = styled.td`
   font-size: 18px;
-  color: #7D7474;
+  color: #8B8484;
   padding: 8px;
   @media (max-width: 1110px) {
     font-size: 16px;
@@ -322,15 +326,6 @@ export const StyledTableLink = styled.a`
   }
 `
 
-export const StyledContactBlock = styled.div`
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 5;
-  padding: 100px;
-`
-
 export const StyledContactBox = styled.div`
   width: 100%;
   height: 100%;
@@ -340,15 +335,15 @@ export const StyledContactBox = styled.div`
 `
 
 export const StyledContactTitle = styled.h3`
-  font-size: 50px;
-  color: #7D7474;
+  font-size: 38px;
+  color: #8B8484;
   @media (max-width: 1110px) {
     font-size: 30px;
   }
 `
 
 export const StyledMailToLink = styled.a`
-  font-size: 54px;
+  font-size: 36px;
   color: #FFFFFF;
   @media (max-width: 1110px) {
     font-size: 32px;

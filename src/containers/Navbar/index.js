@@ -2,8 +2,7 @@ import React from 'react'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 
 import Title from './components/Title'
-import SocialLink from './components/SocialLink'
-import { StyledLeftAbsoluteNavbar, StyledSocialLinkBox, StyledMenu, StyledMenuItem } from './styled'
+import { StyledLeftAbsoluteNavbar, StyledSocialLinkBox, StyledMenu, StyledMenuItem, StyledSocialLink } from './styled'
 
 const Navbar = ({display}) => (
   <StyledLeftAbsoluteNavbar display={display}>
@@ -16,9 +15,15 @@ const Navbar = ({display}) => (
       <StyledMenuItem onClick={() => scrollTo('#contact')}>CONTACT</StyledMenuItem>
     </StyledMenu>
     <StyledSocialLinkBox>
-      <SocialLink>GITHUB</SocialLink>
-      <SocialLink>GMAIL</SocialLink>
-      <SocialLink>VK</SocialLink>
+      <StyledSocialLink href='https://github.com/Raysultan' target='_blank'>
+        GITHUB
+      </StyledSocialLink>
+      <StyledSocialLink href='mailto: ki.xbozz@gmail.com' target='_blank'>
+        GMAIL
+      </StyledSocialLink>
+      <StyledSocialLink href='https://vk.com/raysultan' target='_blank'>
+        VK
+      </StyledSocialLink>
     </StyledSocialLinkBox>
   </StyledLeftAbsoluteNavbar>
 )
