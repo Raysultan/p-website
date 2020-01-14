@@ -12,15 +12,24 @@ const StyledBody = styled.div`
   justify-content: space-between;
 `
 
+const StyledMenuWrapper = styled.div`
+  display: none;
+  @media (max-width: 830px) {
+    display: block;
+  }
+`
+
 const IndexPage = () => (
   <StyledBody>
     <Helmet>
       <meta charSet='utf-8' />
       <title>Raysultan Karimov</title>
     </Helmet>
-    <Menu right>
+    <StyledMenuWrapper>
+      <Menu right>
       <Navbar />
     </Menu>
+    </StyledMenuWrapper>
     <Navbar display='none'/>
     <MainContent />
   </StyledBody>

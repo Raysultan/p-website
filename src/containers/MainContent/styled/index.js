@@ -60,6 +60,15 @@ export const StyledBlock = styled.div`
   @media (max-width: 1000px) {
     padding: 50px;
   }
+  @media (max-width: 830px) {
+    height: 100vw;
+  }
+  @media (max-width: 630px) {
+    height: 120vw;
+  }
+  @media (max-width: 460px) {
+    height: 140vw;
+  }
 `
 
 export const StyledHeader = styled.a`
@@ -78,6 +87,9 @@ export const StyledListItem = styled.li`
   line-height: 1.6;
   @media (max-width: 1300px) {
     font-size: 16px;
+  }
+  @media (max-width: 500px) {
+    font-size: 13px;
   }
   @media (max-width: 420px) {
     font-size: 12px;
@@ -108,6 +120,9 @@ export const StyledListBox = styled.div`
   justify-content: space-between;
   @media (max-width: 1300px) {
     flex-wrap: wrap;
+  }
+  @media (max-width: 620px) {
+    justify-content: flex-start;
   }
 `
 
@@ -293,6 +308,9 @@ export const StyledOtherWorkBlock = styled.div`
   padding: 0 100px 100px 100px;
   @media (max-width: 1000px) {
     padding: 0 50px 50px 50px;
+  }
+  @media (max-width: 830px) {
+    height: 100vw;
   }
 `
 
