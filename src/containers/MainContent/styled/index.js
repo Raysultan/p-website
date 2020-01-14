@@ -229,7 +229,7 @@ export const StyledProjectCardBody = styled.div`
 
 export const StyledProjectCardTitle = styled.h3`
   font-size: 36px;
-  color: #8B8484;
+  color: #FFFFFF;
   margin-bottom: 15px;
   @media (max-width: 1110px) {
     font-size: 24px;
