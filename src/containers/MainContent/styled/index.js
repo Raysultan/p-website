@@ -310,7 +310,7 @@ export const StyledOtherWorkBlock = styled.div`
     padding: 0 50px 50px 50px;
   }
   @media (max-width: 830px) {
-    height: 100vw;
+    height: 120vw;
   }
 `
 
