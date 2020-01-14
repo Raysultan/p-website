@@ -79,6 +79,9 @@ export const StyledListItem = styled.li`
   @media (max-width: 1300px) {
     font-size: 16px;
   }
+  @media (max-width: 420px) {
+    font-size: 12px;
+  }
 `
 
 export const StyledListTitle = styled.h3`
@@ -88,10 +91,16 @@ export const StyledListTitle = styled.h3`
   @media (max-width: 1300px) {
     font-size: 20px;
   }
+  @media (max-width: 420px) {
+    font-size: 14px;
+  }
 `
 
 export const StyledList = styled.ul`
   margin: 0 25px 20px 0;
+  @media (max-width: 420px) {
+    margin: 0 15px 10px 0;
+  }
 `
 
 export const StyledListBox = styled.div`
@@ -176,7 +185,22 @@ export const StyledProjectCard = styled.div`
     height: 24vw;
   }
   @media (max-width: 720px) {
-    height: 28vw;
+    height: 30vw;
+  }
+  @media (max-width: 650px) {
+    height: 24vw;
+  }
+  @media (max-width: 620px) {
+    height: 30vw;
+  }
+  @media (max-width: 540px) {
+    height: 38vw;
+  }
+  @media (max-width: 480px) {
+    height: 50vw;
+  }
+  @media (max-width: 390px) {
+    height: 60vw;
   }
 `
 
@@ -184,7 +208,7 @@ export const StyledImage = styled.img`
   max-width: 100%;
   max-height: 100%;
   display: block;
-  @media (max-width: 764px) {
+  @media (max-width: 650px) {
     display: none;
   }
 `
@@ -277,6 +301,9 @@ export const StyledTableBox = styled.div`
   flex-direction: column;
   align-items: space-around;
   margin-top: 100px;
+  @media (max-width: 500px) {
+    margin-top: 50px;
+  }
 `
 
 export const StyledTableTitle = styled.h3`
@@ -288,6 +315,10 @@ export const StyledTableTitle = styled.h3`
   }
   @media (max-width: 920px) {
     font-size: 24px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 20px;
+    font-size: 20px;
   }
 `
 
@@ -307,6 +338,9 @@ export const StyledTableHeader = styled.th`
   @media (max-width: 1110px) {
     font-size: 20px;
   }
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
 `
 
 export const StyledTableCell = styled.td`
@@ -319,6 +353,9 @@ export const StyledTableCell = styled.td`
   @media (max-width: 720px) {
     font-size: 13px;
   }
+  @media (max-width: 500px) {
+    font-size: 10px;
+  }
 `
 
 export const StyledTableLink = styled.a`
@@ -329,6 +366,9 @@ export const StyledTableLink = styled.a`
   }
   @media (max-width: 720px) {
     font-size: 13px;
+  }
+  @media (max-width: 500px) {
+    font-size: 12px;
   }
 `
 
@@ -346,6 +386,9 @@ export const StyledContactTitle = styled.h3`
   @media (max-width: 1110px) {
     font-size: 30px;
   }
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
 `
 
 export const StyledMailToLink = styled.a`
@@ -353,6 +396,9 @@ export const StyledMailToLink = styled.a`
   color: #FFFFFF;
   @media (max-width: 1110px) {
     font-size: 32px;
+  }
+  @media (max-width: 600px) {
+    font-size: 20px;
   }
 `
 
