@@ -111,11 +111,13 @@ const MainContent = () => (
         <StyledProjectsBox>
           <StyledProjectsHead>FEATURED PROJECTS</StyledProjectsHead>
           <ProjectCard
-            title='EL-JOURNAL'
-            description = 'A SYSTEM FOR STUDENTS PERFORMANCE TRACKING IN SECONDARY SCHOOLS.'
-            used_tech = {['REACT', 'REDUX', 'DJANGO', 'DRF', 'POSTGRESQL']}
-            github_link = 'https://github.com/Raysultan/el-journal'
-            image = 'https://raw.githubusercontent.com/Raysultan/el-journal/develop/images/timetable.png'
+            toggle={true}
+            title='ROSCOSMOS API'
+            description = 'OPEN SOURCE API BASED ON ROSCOSMOS DATA FOR ROCKETS, LAUNCHES, LAUNCH PADS, SPACETUGS, ETC.'
+            used_tech = {['DJANGO', 'DRF', 'CELERY', 'REDIS', 'BS4', 'POSTGRESQL', 'DOCKER']}
+            direct_link = 'http://roscosmos.xyz/'
+            github_link = 'https://github.com/Raysultan/roscosmos-api'
+            image = 'https://www.roscosmos.ru/cache/resized/news/index/splash/roscosmos_bluebackground.png'
           />
         </StyledProjectsBox>
       </StyledBlock>
@@ -124,13 +126,11 @@ const MainContent = () => (
       <StyledLefted />
       <StyledOtherWorkBlock>
         <ProjectCard
-          toggle={true}
-          title='ROSCOSMOS API'
-          description = 'OPEN SOURCE API BASED ON ROSCOSMOS DATA FOR ROCKETS, LAUNCHES, LAUNCH PADS, SPACETUGS, ETC.'
-          used_tech = {['DJANGO', 'DRF', 'CELERY', 'REDIS', 'BS4', 'POSTGRESQL', 'DOCKER']}
-          direct_link = 'http://roscosmos.xyz/'
-          github_link = 'https://github.com/Raysultan/roscosmos-api'
-          image = 'https://www.roscosmos.ru/cache/resized/news/index/splash/roscosmos_bluebackground.png'
+          title='EL-JOURNAL'
+          description = 'A SYSTEM FOR STUDENTS PERFORMANCE TRACKING IN SECONDARY SCHOOLS.'
+          used_tech = {['REACT', 'REDUX', 'DJANGO', 'DRF', 'POSTGRESQL']}
+          github_link = 'https://github.com/Raysultan/el-journal'
+          image = 'https://raw.githubusercontent.com/Raysultan/el-journal/develop/images/timetable.png'
         />
         <ProjectTable
           title='OTHER NOTEWORTHY PROJECTS'
